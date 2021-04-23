@@ -4,9 +4,9 @@
 
 ## In Action
 
-|ON|OFF|
+|Case 1: When Both Switches are OFF|Case 2: When Switch 1 is OFF and Switch 2 is ON|
 |:--:|:--:|
-|![ON](simulation/ON.png)|![OFF](simulation/OFF.png)|
+|![image](https://user-images.githubusercontent.com/61261829/115930043-6de23600-a4a6-11eb-9b26-7124facd5505.png)|![image](https://user-images.githubusercontent.com/61261829/115930127-92d6a900-a4a6-11eb-8543-bde89173b492.png)|
 
 #### CI and Code Quality
 
