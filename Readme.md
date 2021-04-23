@@ -7,6 +7,9 @@
 |Case 1: When Both Switches are OFF|Case 2: When Switch 1 is OFF and Switch 2 is ON|
 |:--:|:--:|
 |![image](https://user-images.githubusercontent.com/61261829/115930043-6de23600-a4a6-11eb-9b26-7124facd5505.png)|![image](https://user-images.githubusercontent.com/61261829/115930127-92d6a900-a4a6-11eb-8543-bde89173b492.png)|
+|Case 3: When Both Switch 1 is ON and Switch 2 is ON|Case 4: When Both Switches are ON|
+|:--:|:--:|
+|![image](https://user-images.githubusercontent.com/61261829/115930263-c6b1ce80-a4a6-11eb-9849-93b9a62fab5c.png)|![image](https://user-images.githubusercontent.com/61261829/115930289-d16c6380-a4a6-11eb-82f5-6a4c09a9c281.png)|
 
 #### CI and Code Quality
 
