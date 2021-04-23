@@ -5,7 +5,6 @@
 |\image html ON.png||
 
 ## Code 
-```
 	for(;;)
 	{
         change_led_state(HIGH);
@@ -13,4 +12,3 @@
         change_led_state(LOW);
 		delay_ms(LED_OFF_TIME);	
 	}
-```
