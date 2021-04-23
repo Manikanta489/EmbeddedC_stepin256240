@@ -1,4 +1,4 @@
-name: Compile-Linux
+name: Code Quality - Static Code - cppcheck
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: get_avr-gcc
-      run: sudo apt-get install gcc-avr binutils-avr avr-libc
-    - name: Compile
-      run: make Activity1
+    - name: Install cppcheck
+      run: sudo apt -y install cppcheck
+    - name: make
+      run: make analysis Activity1
