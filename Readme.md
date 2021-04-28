@@ -1,5 +1,11 @@
 # Embedded C Mini Project
 
+# Activities Description
+
+|Activity|Description|
+|Activity 1| Blink the LED when the two push buttons are pressed|
+|Activity 2| Convert the analog signal from the potentiometer to the digital value|
+
 # Activity 1
 
 ## In Action
@@ -17,3 +23,9 @@
 |Build|Cppcheck|Codacy|
 |:--:|:--:|:--:|
 |[![Build](https://github.com/Manikanta489/EmbeddedC_stepin256240/actions/workflows/build.yml/badge.svg)](https://github.com/Manikanta489/EmbeddedC_stepin256240/actions/workflows/build.yml)|[![Cpp_Check](https://github.com/Manikanta489/EmbeddedC_stepin256240/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/Manikanta489/EmbeddedC_stepin256240/actions/workflows/cpp_check.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e5facfbcad3a46f283b859d701dbe235)](https://www.codacy.com/gh/Manikanta489/EmbeddedC_stepin256240/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Manikanta489/EmbeddedC_stepin256240&amp;utm_campaign=Badge_Grade)
+
+# Activity 2
+
+## In Action
+
+![image](https://user-images.githubusercontent.com/61261829/116450392-e0715e00-a878-11eb-81a1-1e15dda5220c.png)
