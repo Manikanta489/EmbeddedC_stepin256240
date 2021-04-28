@@ -6,6 +6,7 @@
 |:--:|:--:|
 |Activity 1| Blink the LED when the two push buttons are pressed|
 |Activity 2| Convert the analog signal from the potentiometer to the digital value|
+|Activity 3| Generate the PWM signal according to the converted digitav value|
 
 # Activity 1
 
