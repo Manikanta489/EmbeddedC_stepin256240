@@ -3,8 +3,10 @@ PROJ_NAME = Blinky
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c\
-#src/user_utils.c
+SRC = seatheatingapp.c\
+src/gpio.c\
+src/adc.c\
+src/pwm.c
 
 # All header file paths
 INC = -I inc
