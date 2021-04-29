@@ -49,5 +49,6 @@ void adc(activity_output* ADCVALUE)
     {
         ADCSRA&=~ENABLE_ADC;
         ADC=0;
+        ADCVALUE->adc_out=0;
     }
 }

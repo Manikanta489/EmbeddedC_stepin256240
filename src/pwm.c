@@ -12,8 +12,12 @@ void pwm(activity_output* TEMPERATURE)
     /**
      * Checks for digital value of potentiometer and generates PWM accordingly
      **/
-    //if((ADCVALUE->adc_out)<201)
-    if((TEMPERATURE->adc_out)<201)
+    if((TEMPERATURE->adc_out)==0)
+    {
+        OCR0A=0;
+    TEMPERATURE->pwm_out=0;
+    }
+    else if((TEMPERATURE->adc_out)<201)
     {
     OCR0A=51;
     TEMPERATURE->pwm_out=20;
