@@ -1,5 +1,13 @@
 # Embedded C Mini Project
 
+# Activities Description
+
+|Activity|Description|
+|:--:|:--:|
+|Activity 1| Blink the LED when the two push buttons are pressed|
+|Activity 2| Convert the analog signal from the potentiometer to the digital value|
+|Activity 3| Generate the PWM signal according to the converted digital value|
+
 # Activity 1
 
 ## In Action
@@ -11,6 +19,12 @@
 |Case 3: When Both Switch 1 is ON and Switch 2 is ON|Case 4: When Both Switches are ON|
 |:--:|:--:|
 |![image](https://user-images.githubusercontent.com/61261829/115930263-c6b1ce80-a4a6-11eb-9849-93b9a62fab5c.png)|![image](https://user-images.githubusercontent.com/61261829/115930289-d16c6380-a4a6-11eb-82f5-6a4c09a9c281.png)|
+
+# Activity 2
+
+## In Action
+
+![image](https://user-images.githubusercontent.com/61261829/116450392-e0715e00-a878-11eb-81a1-1e15dda5220c.png)
 
 #### CI and Code Quality
 
