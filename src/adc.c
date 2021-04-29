@@ -9,15 +9,11 @@
  * 
  */
 #include "adc.h"
+
 /**
  * @brief Configure the ADC Module
  * 
  */
-void ADCInit()
-{
-ADMUX|=CONFIGURE_RESOLUTION;
-ADCSRA|=ENABLE_ADC;
-}
 /**
  * @brief Converts the analog signal in the channel ch to digital value
  * 
@@ -34,18 +30,24 @@ uint16_t ReadADC(uint8_t ch)
     ADCSRA|=CONVERSION_COMPLETE;
     return(ADC);
 }
-
+/**
+ * @brief Function which stores the converted digital value in the adc_outt member in activity_out structure
+ * 
+ * @param ADCVALUE 
+ */
 void adc(activity_output* ADCVALUE)
 {
-    /**
-     * Checks for status of LED and initiates ADC
-     * Stores the result in adc_out member in the activity_outputs
-     **/
     if(ADCVALUE->gpio_out==1)
     {
-    ADCInit();
     uint16_t temp=0;
+    ADMUX|=CONFIGURE_RESOLUTION;
+    ADCSRA|=ENABLE_ADC;
     temp=ReadADC(3);
     ADCVALUE->adc_out=temp;
+    }
+    else
+    {
+        ADCSRA&=~ENABLE_ADC;
+        ADC=0;
     }
 }

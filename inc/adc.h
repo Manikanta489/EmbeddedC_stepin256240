@@ -36,14 +36,6 @@
  * @brief This function configures necessary registers for ADC Module
  * 
  */
-void ADCInit(void);
-
-/**
- * @brief This function does the ADC conversion
- * 
- * @param [in] channel of ADC
- * @return uint16_t corresponding digital value of analog signal 
- */
 uint16_t ReadADC(uint8_t ch);
 /**
  * @brief Checks for the LED and initiates the ADC module

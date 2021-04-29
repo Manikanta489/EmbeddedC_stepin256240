@@ -24,8 +24,8 @@
  */
 #define F_CPU 16000000UL 	/**< Clock Frequency of MCU is 16 MHz */
 #define NON_INVERTING_FAST_PWM_MODE ((1<<COM0A1)|(1<<WGM01)|(1<<WGM00))  /**< Non-inverting Fast PWM mode*/
-#define PRESCALER_CONFIG ((1<<CS01)|(1<<CS00)); /**< Set Prescaler Value to 64 */
-#define CONFIGURE_PWM_PIN (1<<PD6);
+#define PRESCALER_CONFIG ((1<<CS01)|(1<<CS00)) /**< Set Prescaler Value to 64 */
+#define CONFIGURE_PWM_PIN (1<<DDD6)
 /**
  * Function Definitions
  */

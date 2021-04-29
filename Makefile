@@ -6,7 +6,8 @@ BUILD_DIR = Build
 SRC = seatheatingapp.c\
 src/gpio.c\
 src/adc.c\
-src/pwm.c
+src/pwm.c\
+src/uart.c
 
 # All header file paths
 INC = -I inc

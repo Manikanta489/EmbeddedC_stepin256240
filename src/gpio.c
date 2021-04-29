@@ -14,7 +14,7 @@
  * @brief Initialize all the Peripherals and pin configurations
  * 
  */
-void peripheral_init(void)
+void GPIOInit(void)
 {
 	/* Configure LED Pin */
 	DDRB|=CONFIGURE_PB0;
@@ -40,19 +40,17 @@ void change_led_state(uint8_t state)
  * @return int Return 0 if the program completes successfully
  * @note LED is on if and only if thw two push buttons are ON
  */
-int gpio(void)
+void gpio(activity_output *GPIO)
 {
-	/* Initialize Peripherals */
-	peripheral_init();
     /* Check status of push buttons and glow the LED appropriately */
 		if(CHECK_ACTIVATION_OF_PUSH_BUTTONS==1)
         {
         change_led_state(LED_ON);
-        return 1;
+        GPIO->gpio_out=LED_ON;
 		}
 		else
 		{
-         change_led_state(LED_OFF);
-        return 0;
+        change_led_state(LED_OFF);
+		GPIO->gpio_out=LED_OFF;
 		}
 	}

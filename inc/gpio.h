@@ -25,6 +25,7 @@ typedef struct gpio
 {
     uint8_t gpio_out;
     uint16_t adc_out;
+    uint16_t pwm_out;
 }activity_output;
 
 
@@ -53,14 +54,15 @@ typedef struct gpio
  */
 void change_led_state(uint8_t state);
 /**
- * @brief Blink the LED according to the activation of push buttons
- * 
- * @return 1 if both push buttons are zero else 0
+ * @brief Configure port pins
  */
+
+void GPIOInit(void);
 /**
+ * 
  * @brief Status of LED
  * 
- * @return 1 for ON else 0
+ *
  */
-int gpio(void);
+void gpio(activity_output*);
 #endif
