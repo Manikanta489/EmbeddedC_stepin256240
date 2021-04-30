@@ -15,10 +15,10 @@ int main()
     {
         /** Execution of SeatHeating
          */ 
-        gpio(app);
-        adc(app);
-        pwm(app);
-        uart(app);
+        gpio(app); // Call GPIO Program which activates the LED
+        adc(app); // Call ADC program which converts the analog signal from potentiometer to a digital value
+        pwm(app); // Call PWM program which generates PWM signal according to the digital value
+        uart(app); // Call UART module which sends the temperature value to serial monitor
     }
     return 0;
 }

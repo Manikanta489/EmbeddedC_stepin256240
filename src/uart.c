@@ -17,6 +17,7 @@ void UARTInit()
 {
     UBRR0L=UBRR;
     UBRR0H=UBRR_MSB;
+    UCSR0B|=CONFIGURE_UCSR0B;
     UCSR0C=SENDING_NUMBER_OF_BITS;
 }
 /**
@@ -24,12 +25,13 @@ void UARTInit()
  * 
  * @param data 
  */
-void UARTWriteChar(char data)
+void UARTWriteTemperature(char temperature)
 {
+    /** Wait until Transmitter is empty*/
 while(TRASMITTER_EMPTY)
 {
 }
-UDR0=data;
+UDR0=temperature;
 }
 /**
  * @brief Main program of UART Module
@@ -37,9 +39,8 @@ UDR0=data;
  */
 void uart(activity_output* UART)
 {
-
-    UCSR0B|=CONFIGURE_UCSR0B;
-    UCSR0B|=(1<<TXEN0);
-    UARTWriteChar(UART->temperature);
+    /** Check if LED is on*/
+    if(UART->gpio_out==1)
+    UARTWriteTemperature(UART->temperature);
 
 }

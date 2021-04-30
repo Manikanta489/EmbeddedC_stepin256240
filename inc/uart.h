@@ -50,6 +50,6 @@ void uart(activity_output*);
  * 
  * @param data;message to be displayed in the serial monitor
  */
-void UARTWriteChar(char data);
+void UARTWriteTemperature(char data);
 
 #endif
