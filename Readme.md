@@ -10,7 +10,8 @@
 |Activity 4| Send the temperature value to the serial monitor using UART protocol|
 
 # Assumptions
-
+* Switches are used to the realize the passenger in the seat and the press of the heater
+* The temperature sensor is realized using the potentiometer
 
 # Activity 1
 
