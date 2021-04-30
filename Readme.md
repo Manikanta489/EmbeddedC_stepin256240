@@ -59,23 +59,25 @@
 
 |Case 1: Temperature = 20 |
 |:--:|
-|![image](https://user-images.githubusercontent.com/61261829/116689398-b1243380-a9d5-11eb-9564-c2cd473cc5e9.png)|
+|![image](https://user-images.githubusercontent.com/61261829/116717561-a4640780-a9f6-11eb-9114-3ec2c38a5a29.png)|
 
 |Case 2: Temperature = 25|
 |:--:|
-|![image](https://user-images.githubusercontent.com/61261829/116689499-d5801000-a9d5-11eb-97b9-6c23e14f08a3.png)|
+|![image](https://user-images.githubusercontent.com/61261829/116717605-b2b22380-a9f6-11eb-8ffb-f0cbf3f3dc31.png)|
 
 
 |Case 3: Temperature = 29 |
 |:--:|
-|![image](https://user-images.githubusercontent.com/61261829/116689834-30196c00-a9d6-11eb-907d-9586ce5f3912.png)|
+|![image](https://user-images.githubusercontent.com/61261829/116717632-bd6cb880-a9f6-11eb-9003-9dfeba660830.png)
 
 |Case 4: Temperature = 33|
 |:--:|
-|![image](https://user-images.githubusercontent.com/61261829/116689962-5dfeb080-a9d6-11eb-80c5-823ee46b98d4.png)|
+|![image](https://user-images.githubusercontent.com/61261829/116717672-c6f62080-a9f6-11eb-8aff-de9657a348da.png)|
 
 
 # Final Working
+![image](https://user-images.githubusercontent.com/61261829/116717716-d1b0b580-a9f6-11eb-9eab-cd533d796e10.png)
+
 
 #### CI and Code Quality
 
