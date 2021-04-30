@@ -53,9 +53,29 @@
 |:--:|
 |![image](https://user-images.githubusercontent.com/61261829/116689962-5dfeb080-a9d6-11eb-80c5-823ee46b98d4.png)|
 
+# Activity 4
+
+## In Action
+
+|Case 1: Temperature = 20 |
+|:--:|
+|![image](https://user-images.githubusercontent.com/61261829/116689398-b1243380-a9d5-11eb-9564-c2cd473cc5e9.png)|
+
+|Case 2: Temperature = 25|
+|:--:|
+|![image](https://user-images.githubusercontent.com/61261829/116689499-d5801000-a9d5-11eb-97b9-6c23e14f08a3.png)|
 
 
+|Case 3: Temperature = 29 |
+|:--:|
+|![image](https://user-images.githubusercontent.com/61261829/116689834-30196c00-a9d6-11eb-907d-9586ce5f3912.png)|
 
+|Case 4: Temperature = 33|
+|:--:|
+|![image](https://user-images.githubusercontent.com/61261829/116689962-5dfeb080-a9d6-11eb-80c5-823ee46b98d4.png)|
+
+
+# Final Working
 
 #### CI and Code Quality
 
