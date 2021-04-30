@@ -4,7 +4,7 @@
 /**
  * @file adc.h
  * @author Manikanta Suri manikantaram215@gmail.com
- * @brief Header file for adc.c
+ * @brief When the LED is ON, This function converts the analog signal from the potentiometer to a digital value
  * @version 0.1
  * @date 2021-04-27
  * 

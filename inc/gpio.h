@@ -4,7 +4,7 @@
 /**
  * @file gpio.h
  * @author Manikanta Suri manikantaram215@gmail.com
- * @brief Header file for gpio.c
+ * @brief Function which checks the activation of two switches and blinks the LED accordingly
  * @version 0.1
  * @date 2021-04-27
  * 

@@ -1,3 +1,17 @@
+/**
+ * @file SeatHeatingApp.c
+ * @author Manikanta Suri
+ * @brief Seat Heating system for Vehicles
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+/**
+ * Include header files
+ */
+
 #include "gpio.h"
 #include "adc.h"
 #include "pwm.h"

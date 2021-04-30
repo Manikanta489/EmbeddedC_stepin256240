@@ -2,9 +2,9 @@
 #define __PWM_H_
 
 /**
- * @file adc.h
+ * @file pwm.h
  * @author Manikanta Suri manikantaram215@gmail.com
- * @brief Header file for adc.c
+ * @brief When the LED is ON, This function generates a PWM signal according to the converted digital value
  * @version 0.1
  * @date 2021-04-27
  * 

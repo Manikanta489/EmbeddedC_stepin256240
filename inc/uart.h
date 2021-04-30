@@ -4,7 +4,7 @@
 /**
  * @file uart.h
  * @author Manikanta Suri manikantaram215@gmail.com
- * @brief Header file for uart.c
+ * @brief When the LED is ON, This function displays the temperature value to serial monitor
  * @version 0.1
  * @date 2021-04-27
  * 
