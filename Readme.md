@@ -21,11 +21,16 @@
 |:--:|:--:|
 |![image](https://user-images.githubusercontent.com/61261829/115930263-c6b1ce80-a4a6-11eb-9849-93b9a62fab5c.png)|![image](https://user-images.githubusercontent.com/61261829/115930289-d16c6380-a4a6-11eb-82f5-6a4c09a9c281.png)|
 
-# Activity 2
+# Activity 2 
 
 ## In Action
 
 ![image](https://user-images.githubusercontent.com/61261829/116450392-e0715e00-a878-11eb-81a1-1e15dda5220c.png)
+
+# Activity 3
+
+## In Action
+
 
 #### CI and Code Quality
 
