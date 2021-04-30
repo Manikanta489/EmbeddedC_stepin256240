@@ -4,9 +4,10 @@
 
 |Activity|Description|
 |:--:|:--:|
-|Activity 1| Blink the LED when the two push buttons are pressed|
-|Activity 2| Convert the analog signal from the potentiometer to the digital value|
+|Activity 1| Blink the LED when the passenger is in the seat and the heater is pressed|
+|Activity 2| Convert the analog signal from the sensor to the digital value|
 |Activity 3| Generate the PWM signal according to the converted digital value|
+|Activity 4| Send the temperature value to the serial monitor using UART protocol|
 
 # Activity 1
 
