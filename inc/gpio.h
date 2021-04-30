@@ -21,11 +21,11 @@
 /**
  * Structure defnitions
  */
-typedef struct gpio
+typedef struct
 {
-    uint8_t gpio_out;
-    uint16_t adc_out;
-    uint16_t pwm_out;
+    uint8_t gpio_out; /**<LED Status 1 for ON, 0 for OFF*/
+    uint16_t adc_out; /**<Digital Value of the analog signal*/
+    int temperature; /**< Temperature value*/ 
 }activity_output;
 
 
@@ -40,11 +40,11 @@ typedef struct gpio
 #define LED_PORT (PORTB)    /**< LED Port Number */
 #define LED_PIN  (PORTB0)   /**< LED Pin number  */
 #define CONFIGURE_PB0 (1 << DDB0);  /**< Configure Pin PB0 as output as Led is connected to PB0 Pin */
-#define CONFIGURE_PUSH_BUTTONS (~(1<<DDD0)|(1<<DDD4)); /**< Configure Pin PD0, PD4 as inputs as push buttons are connected to it */
+#define CONFIGURE_PUSH_BUTTONS ((1<<DDD0)|(1<<DDD4)); /**< Configure Pin PD0, PD4 as inputs as push buttons are connected to it */
 #define PD0_PD4_LOGIC_HIGH ((1<<DDD0)|(1<<DDD4)); /**< Send logic high signal to PD0, PD4 */
 #define CHECK_ACTIVATION_OF_PUSH_BUTTONS (!(PIND&((1<<DDD0)|(1<<DDD4))))
 /**
- * Function Definitions
+ * Function Prototypes
  */
 
 /**

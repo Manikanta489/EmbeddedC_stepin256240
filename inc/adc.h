@@ -29,19 +29,21 @@
 #define WAIT_FOR_CONVERSION (!((ADCSRA)&(1<<ADIF))) /**< Wait until conversion gets completed */
 #define CONVERSION_COMPLETE (1<<ADIF) /**< Conversion complete Interrupt */
 /**
- * Function Definitions
+ * Function Prototypes
  */
 
-/**
- * @brief This function configures necessary registers for ADC Module
- * 
- */
 uint16_t ReadADC(uint8_t ch);
 /**
  * @brief Checks for the LED and initiates the ADC module
  * 
  * 
  * @param activity_output *ADC
+ */
+
+/**
+ * @brief Stores the output of the converted digital value in adc_out member in ADCVALUE Struct
+ * 
+ * @param ADCVALUE 
  */
 void adc(activity_output* ADCVALUE);
 

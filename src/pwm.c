@@ -1,41 +1,61 @@
+/**
+ * @file pwm.c
+ * @author Manikanta Suri
+ * @brief Function which generate a PWM signal on PB1 according to converted digital value
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+/**
+ * Include the header files
+ */
+
 #include "pwm.h"
 #include <util/delay.h>
-
+#include <string.h>
+/**
+ * @brief Configure necessary registers for PWM module
+ * 
+ */
 void PWMInit()
 {
-        TCCR0A|=NON_INVERTING_FAST_PWM_MODE;
-        TCCR0B|=PRESCALER_CONFIG;
-        DDRD|=CONFIGURE_PWM_PIN;
+        TCCR1A|=NON_INVERTING_FAST_PWM_MODE;
+        TCCR1B|=PRESCALER_CONFIG;
+        DDRB|=CONFIGURE_PWM_PIN;
 }
-void pwm(activity_output* TEMPERATURE)
+void pwm(activity_output* ADCVALUE)
 {
     /**
-     * Checks for digital value of potentiometer and generates PWM accordingly
+     * Checks for digital value of potentiometer and generates PWM and sets the temperature
      **/
-    if((TEMPERATURE->adc_out)==0)
+    if((ADCVALUE->gpio_out)==0)
     {
-        OCR0A=0;
-    TEMPERATURE->pwm_out=0;
-    }
-    else if((TEMPERATURE->adc_out)<201)
-    {
-    OCR0A=51;
-    TEMPERATURE->pwm_out=20;
-    }
-    else if((TEMPERATURE->adc_out)<501)
-    {
-        OCR0A=102;
-        TEMPERATURE->pwm_out=25;
-    }
-    else if((TEMPERATURE->adc_out)<701)
-    {
-    OCR0A=179;
-    TEMPERATURE->pwm_out=29;
+    OCR1A=0;
     }
     else
     {
-    OCR0A=230;
-    TEMPERATURE->pwm_out=33;
+    if((ADCVALUE->adc_out)<201)
+    {
+    OCR1A=D20;
+    ADCVALUE->temperature=20;
+    }
+    else if((ADCVALUE->adc_out)<501)
+    {
+    OCR1A=D40;
+    ADCVALUE->temperature=25;
+    }
+    else if((ADCVALUE->adc_out)<701)
+    {
+    OCR1A=D70;
+    ADCVALUE->temperature=29;
+    }
+    else
+    {
+    OCR1A=D95;
+    ADCVALUE->temperature=33;
+    }
     }
     _delay_ms(200);
     }

@@ -19,7 +19,7 @@ void GPIOInit(void)
 	/* Configure LED Pin */
 	DDRB|=CONFIGURE_PB0;
 	/* Configure the switches*/
-	DDRD&=CONFIGURE_PUSH_BUTTONS;
+	DDRD&=~CONFIGURE_PUSH_BUTTONS;
 	/* logic high to ports PD0, PD4 */
 	PORTD|=PD0_PD4_LOGIC_HIGH;
 }
@@ -35,10 +35,9 @@ void change_led_state(uint8_t state)
 
 
 /**
- * @brief Main function where the code execution starts
+ * @brief Function which determines the status of LED according to acrivation of push buttons
  * 
- * @return int Return 0 if the program completes successfully
- * @note LED is on if and only if thw two push buttons are ON
+ * @param GPIO 
  */
 void gpio(activity_output *GPIO)
 {

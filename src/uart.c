@@ -18,7 +18,6 @@ void UARTInit()
     UBRR0L=UBRR;
     UBRR0H=UBRR_MSB;
     UCSR0C=SENDING_NUMBER_OF_BITS;
-    UCSR0B=CONFIGURE_UCSR0B;
 }
 /**
  * @brief Write the character to serial monitor
@@ -36,7 +35,11 @@ UDR0=data;
  * @brief Main program of UART Module
  * 
  */
-void uart()
+void uart(activity_output* UART)
 {
-    UARTWriteChar('A');
+
+    UCSR0B|=CONFIGURE_UCSR0B;
+    UCSR0B|=(1<<TXEN0);
+    UARTWriteChar(UART->temperature);
+
 }

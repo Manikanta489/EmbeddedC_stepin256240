@@ -23,11 +23,20 @@
  * Macro Definitions
  */
 #define F_CPU 16000000UL 	/**< Clock Frequency of MCU is 16 MHz */
-#define NON_INVERTING_FAST_PWM_MODE ((1<<COM0A1)|(1<<WGM01)|(1<<WGM00))  /**< Non-inverting Fast PWM mode*/
-#define PRESCALER_CONFIG ((1<<CS01)|(1<<CS00)) /**< Set Prescaler Value to 64 */
-#define CONFIGURE_PWM_PIN (1<<DDD6)
+#define NON_INVERTING_FAST_PWM_MODE ((1<<COM1A1)|(1<<WGM11)|(1<<WGM10))  /**< Non-inverting Fast PWM mode*/
+#define PRESCALER_CONFIG ((1<<WGM12)|(1<<CS11)|(1<<CS10)) /**< Set Prescaler Value to 64 */
+#define CONFIGURE_PWM_PIN (1<<DDB1)/**<Configure PWM pin*/
 /**
- * Function Definitions
+ * Define Duty Ratios
+ * 
+ */
+#define D0 0
+#define D20 205
+#define D40 410
+#define D70 716
+#define D95 972
+/**
+ * Function Prototypes
  */
 
 /**

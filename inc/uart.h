@@ -27,9 +27,9 @@
 #define UBRR_MSB ((UBRR>>8) & (0x00ff)) /**< UBRR0H configuration for Baud Rate*/
 #define SENDING_NUMBER_OF_BITS ((1<<UCSZ01)|(1<<UCSZ00)) /**< No of bits transmission for UART protocol configuration*/
 #define CONFIGURE_UCSR0B ((1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0)) /**< Configure UCSR0B register*/
-#define TRASMITTER_EMPTY (!(UCSR0A&(1<<RXC0)))
+#define TRASMITTER_EMPTY (!(UCSR0A&(1<<UDRE0)))
 /**
- * Function Definitions
+ * Function Prototypes
  */
 
 /**
@@ -42,13 +42,13 @@ void UARTInit(void);
  * @brief Main program for UART
  * 
  * 
- * @param activity_output *ADC
+ * @param activity_output 
  */
-void uart(void);
+void uart(activity_output*);
 /**
  * @brief Write the data to transmitter UDR0 regisrer
  * 
- * @param data 
+ * @param data;message to be displayed in the serial monitor
  */
 void UARTWriteChar(char data);
 

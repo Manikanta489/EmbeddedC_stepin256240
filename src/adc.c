@@ -37,6 +37,7 @@ uint16_t ReadADC(uint8_t ch)
  */
 void adc(activity_output* ADCVALUE)
 {
+    /** Check if LED is glown and start the ADC process*/
     if(ADCVALUE->gpio_out==1)
     {
     uint16_t temp=0;
@@ -47,7 +48,6 @@ void adc(activity_output* ADCVALUE)
     }
     else
     {
-        ADCSRA&=~ENABLE_ADC;
         ADC=0;
         ADCVALUE->adc_out=0;
     }
