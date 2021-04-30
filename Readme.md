@@ -5,9 +5,12 @@
 |Activity|Description|
 |:--:|:--:|
 |Activity 1| Blink the LED when the passenger is in the seat and the heater is pressed|
-|Activity 2| Convert the analog signal from the sensor to the digital value|
+|Activity 2| Convert the analog signal from the temperature sensor to the digital value|
 |Activity 3| Generate the PWM signal according to the converted digital value|
 |Activity 4| Send the temperature value to the serial monitor using UART protocol|
+
+# Assumptions
+
 
 # Activity 1
 
