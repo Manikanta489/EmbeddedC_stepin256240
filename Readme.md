@@ -19,7 +19,8 @@
 
 |Case 3: When Both Switch 1 is ON and Switch 2 is ON|Case 4: When Both Switches are ON|
 |:--:|:--:|
-|![image](https://user-images.githubusercontent.com/61261829/115930263-c6b1ce80-a4a6-11eb-9849-93b9a62fab5c.png)|![image](https://user-images.githubusercontent.com/61261829/115930289-d16c6380-a4a6-11eb-82f5-6a4c09a9c281.png)|
+|![image](https://user-images.githubusercontent.com/61261829/115930263-c6b1ce80-a4a6-11eb-9849-93b9a62fab5c.png)|![image](https://user-images.githubusercontent.com/61261829/115930289-d16c6380-a4a6-11eb-82f5-6a4c09a9c281.png)| ![image](https://user-images.githubusercontent.com/61261829/116689761-16782480-a9d6-11eb-886a-bb9877016e00.png)
+
 
 # Activity 2 
 
